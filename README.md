@@ -13,8 +13,11 @@ INTRODUCING **LightMouseGun** - a program that controls the mouse with light.
 ![Screenshot](images/screenshot.png)
 
 Press **START** to start your webcam
+
 Select one of the positions (by default the middle bottom one is selected). The position defines the region which the camera sees.
+
 Point a light towards the camera lense.
+
 Press **PREVIEW** to see what the camera sees. That's optional.
 
 WHAT ABOUT CLICKING? This program is **_SPECIFICALLY_** written for light gun shooter games. As such you would want to click/shoot with something that looks like a gun and has a trigger. Moreover, this program is tested with FCEUX and Nestopia (NES emulators) which, for some reason, register only hardware input. Not simulated clicks.
