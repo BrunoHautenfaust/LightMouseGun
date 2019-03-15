@@ -1,8 +1,13 @@
-# LightMouseGun
-Program that controls the mouse with light
-
 ### About
-Do you remember _Duck Hunt_? That's right, the NES game. Those were the days.
+Do you remember _Duck Hunt_ (the NES game)? I do.
+
+Do you want to play it? I do.
+
+Do you have a Famicom AND a light gun? I don't.
+
+Do you have a CRT TV? I don't.
+
+INTRODUCING **LightMouseGun** - a program that controls the mouse with light.
 
 ### Usage
 ![Screenshot](images/screenshot.png)
