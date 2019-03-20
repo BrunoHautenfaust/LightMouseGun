@@ -23,6 +23,10 @@ while True:
     button, values = gui.window.Read(timeout=0)
 
     if button is 'START':
+        videoCapture.prepare_camera()
+        if videoCapture.cam_is_available():
+            gui.popup('No camera detected')
+            break
         videoCapture.start()
         start_capture = not start_capture
         gui.disable('START').enable('STOP').enable('PREVIEW')

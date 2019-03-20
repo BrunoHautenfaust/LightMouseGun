@@ -6,14 +6,24 @@ class VideoCapture:
 
     def __init__(self):
         self.stream = None
+        self.stopped = False
 
-    def start(self, src=0):
+    def prepare_camera(self, src=0):
+        self.stream = cv2.VideoCapture(src)
+
+    def cam_is_available(self):
+        if self.stream is None or not self.stream.isOpened():
+            return False
+        else:
+            return True
+
+    def start(self):
         os.system('v4l2-ctl --set-ctrl exposure_auto_priority=0')
         self.stopped = False
-        self.stream = cv2.VideoCapture(src)
         (self.grabbed, self.frame) = self.stream.read()
         Thread(target=self.__get, args=()).start()
         return self
+
 
     def stop(self):
         os.system('v4l2-ctl --set-ctrl exposure_auto_priority=1')

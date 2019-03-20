@@ -37,3 +37,5 @@ class GUI:
         self.window.Element(button).Update(disabled=True)
         return self
 
+    def popup(self, message):
+        return sg.Popup(message)
