@@ -1,15 +1,7 @@
-### About
-Do you remember _Duck Hunt_ (the NES game)? I do.
+## About
+**LightMouseGun** is a program that controls the mouse with light. It aims to let you play light gun shooter games on newer displays simulating the unique experience of the classic light gun games (like Duck Hunt for NES).
 
-Do you want to play it? I do.
-
-Do you have a Famicom AND a light gun? I don't.
-
-Do you have a CRT TV? I don't.
-
-INTRODUCING **LightMouseGun** - a program that controls the mouse with light.
-
-### Usage
+## Usage
 ![Screenshot](images/screenshot.png)
 
 Press **START** to start your webcam
@@ -30,8 +22,9 @@ So what can you do about this? Here's an example:
 - Flashlight.
 - Soldering tool, and other stuff to stick things together.
 
-### Known issues:
+## Known issues:
 - Does not work with full-screen applications.
 - Only the linux executable works. I can't seem to bundle the dependencies with Pyinstaller in a single exe for Windows yet.
+- The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
 ---
-_NOTE:_ The project is written with Pycharm under linux. So trying to open it up in Windows won't work because the files are not absolutely the same for both Operating Systems. That's why I'll provide executables here. 
+_NOTE:_ The project is written with Pycharm under linux. So if you open it with Pycharm under Windows, you'll have to setup the python interpreter and the dependencies (libraries). Unless there's an easier cross-platform way I'm not aware of ...
