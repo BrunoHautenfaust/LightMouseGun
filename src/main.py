@@ -24,7 +24,7 @@ while True:
 
     if button is 'START':
         videoCapture.prepare_camera()
-        if videoCapture.cam_is_available():
+        if not videoCapture.cam_is_available():
             gui.popup('No camera detected')
             break
         videoCapture.start()
