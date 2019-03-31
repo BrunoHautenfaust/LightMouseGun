@@ -27,4 +27,11 @@ So what can you do about this? Here's an example:
 - Only the linux executable works. I can't seem to bundle the dependencies with Pyinstaller in a single exe for Windows yet.
 - The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
 ---
-_NOTE:_ The project is written with Pycharm under linux. So if you open it with Pycharm under Windows, you'll have to setup the python interpreter and the dependencies (libraries). Unless there's an easier cross-platform way I'm not aware of ...
+_DEVELOPER NOTE:_
+To setup the project, run the following commands in terminal:
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+These commands will create a virtual environment in `venv` folder and install the needed dependencies. Needless to say, you'll need to have pip installed.
