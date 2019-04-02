@@ -41,7 +41,7 @@ class ROI:
         return cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     def __threshold(self, frame):
-        return cv2.threshold(frame, 224, 255, cv2.THRESH_BINARY)
+        return cv2.threshold(frame, 220, 255, cv2.THRESH_BINARY)
 
     def __find_contours(self, frame):
         return cv2.findContours(frame, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
