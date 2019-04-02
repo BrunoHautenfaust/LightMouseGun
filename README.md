@@ -28,7 +28,7 @@ So what can you do about this? Here's an example:
 - The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
 ---
 _DEVELOPER NOTE:_
-To setup the project, run the following commands in terminal:
+To setup the project, run the following commands in terminal in the `src` folder:
 ```
 python3 -m venv venv
 source venv/bin/activate
