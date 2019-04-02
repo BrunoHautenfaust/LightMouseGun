@@ -34,4 +34,4 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-These commands will create a virtual environment in `venv` folder and install the needed dependencies. Needless to say, you'll need to have `python3-env` installed. And probably `python3-tk`.
+These commands will create a virtual environment in `venv` folder and install the needed dependencies. You'll need to have `python3-env` installed. And `python3-tk`.
