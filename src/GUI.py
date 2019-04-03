@@ -18,7 +18,7 @@ class GUI:
                  [sg.Button('◣', key='bottom_left', size=self.buttonSize), sg.Button('▼', key='bottom_center', size=self.buttonSize), sg.Button('◢', key='bottom_right', size=self.buttonSize)],
                  [sg.Text('')],
                  [sg.Text('')],
-                 [sg.Button('Start', key='START'), sg.Text(' ' * 9), sg.Button('Stop', key='STOP', disabled=True)]
+                 [sg.Button('Start', key='START'), sg.Text(' ' * 2), sg.Button('Stop', key='STOP', disabled=True)]
                 ], key='pos_frame'),
              sg.Frame('Preview', [
                  [sg.Image(filename='', size=self.elSize, key='OUTPUT')],
