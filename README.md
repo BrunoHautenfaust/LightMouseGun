@@ -18,6 +18,7 @@ So what can you do about this? Here's an example:
 ![mouse-gun_1](images/mouse-gun_1.jpg)
 
 But if that's too much for you, then how about this:
+
 ![mouse-gun_2](images/mouse-gun_2.jpg)
 
 - USB mouse.
@@ -26,7 +27,6 @@ But if that's too much for you, then how about this:
 
 ## Known issues:
 - Does not work with full-screen applications.
-- Only the linux executable works. I can't seem to bundle the dependencies with Pyinstaller in a single exe for Windows yet.
 - The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
 ---
 _DEVELOPER NOTE:_
