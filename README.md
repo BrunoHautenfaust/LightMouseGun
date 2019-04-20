@@ -12,15 +12,17 @@ Point a light towards the camera lense.
 
 Press **PREVIEW** to see what the camera sees. That's optional.
 
-WHAT ABOUT CLICKING? This program is **_SPECIFICALLY_** written for light gun shooter games. As such you would want to click/shoot with something that looks like a gun and has a trigger. Moreover, this program is tested with FCEUX and Nestopia (NES emulators) which, for some reason, register only hardware input. Not simulated clicks.
+WHAT ABOUT CLICKING? This program is **_SPECIFICALLY_** written for light gun shooter games. As such you would want to click/shoot with something that has a button/trigger. Moreover, this program is tested with FCEUX and Nestopia (NES emulators) which, for some reason, register only hardware input. Not simulated clicks.
 
 So what can you do about this? Here's an example:
-![mouse-gun](images/mouse-gun.png)
+![mouse-gun_1](images/mouse-gun_1.jpg)
 
-- Cheap plastic toy gun. If it's not cheap it won't work.
+But if that's too much for you, then how about this:
+![mouse-gun_2](images/mouse-gun_2.jpg)
+
 - USB mouse.
 - Flashlight.
-- Soldering tool, and other stuff to stick things together.
+- Rubber band.
 
 ## Known issues:
 - Does not work with full-screen applications.
@@ -37,6 +39,7 @@ pip install -r requirements.txt
 
 To setup the project in Windows run the following commands in terminal in the `src` folder:
 ```
+pip install virtualenv
 virtualenv venv
 \path\to\venv\Scripts\activate
 pip install -r requirements.txt
