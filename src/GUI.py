@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+from icon import icon
 
 class GUI:
     def __init__(self, title):
@@ -6,7 +7,7 @@ class GUI:
         self.buttonBGColor = '#F5F5F5'
         self.elSize = (213, 156)
         self.buttonSize = (3,1)
-        sg.SetOptions(icon='favicon', font=('default', 10), button_color=(self.buttonColor, self.buttonBGColor))
+        sg.SetOptions(icon=icon, font=('default', 10), button_color=(self.buttonColor, self.buttonBGColor))
         self.window = self.__build_UI(title)
         self.print = sg.EasyPrint
 
