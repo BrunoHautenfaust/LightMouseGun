@@ -41,7 +41,7 @@ To setup the project in Windows run the following commands in terminal in the `s
 ```
 pip install virtualenv
 virtualenv venv
-\path\to\venv\Scripts\activate
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
-These commands will create a virtual environment in `venv` folder and install the needed dependencies. You'll need to have `python3-env` installed. And `python3-tk`. For both Operating Systems, things might differ. 
+These commands will create a virtual environment in `venv` folder and install the needed dependencies. You'll need to have `python3-env` installed. And `python3-tk`. For both Operating Systems, things might differ.
