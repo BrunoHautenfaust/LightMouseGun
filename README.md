@@ -2,7 +2,8 @@
 **LightMouseGun** is a program that controls the mouse with light. It aims to let you play light gun shooter games on newer displays simulating the unique experience of the classic light gun games (like Duck Hunt for NES).
 
 ## Usage
-![Screenshot](images/screenshot.png)
+![screen_windows](images/screen_windows.png)
+![screen_linux](images/screen_linux.png)
 
 Press **START** to start your webcam
 
@@ -26,7 +27,7 @@ But if that's too much for you, then how about this:
 - Rubber band.
 
 ## Known issues:
-- Does not work with full-screen applications.
+- Does not work with full-screen applications. At least in linux. Don't know about Windows.
 - The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
 ---
 _DEVELOPER NOTE:_
@@ -45,3 +46,12 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 These commands will create a virtual environment in `venv` folder and install the needed dependencies. You'll need to have `python3-env` installed. And `python3-tk`. For both Operating Systems, things might differ.
+
+To build the project run:
+```
+pyinstaller --onefile --windowed --clean main.py
+```
+The executable will appear in the dist folder.
+
+**Note**: For building in Windows you'll need ***api-ms-win-downlevel-shlwapi-l1-1-0.dll***.
+After you create the virtual environment (venv), put the dll in `src\venv\Lib\site-packages\cv2`.
