@@ -1,6 +1,5 @@
 import cv2
 from threading import Thread
-import os
 
 class VideoCapture:
 
@@ -18,7 +17,6 @@ class VideoCapture:
             return True
 
     def start(self):
-        os.system('v4l2-ctl --set-ctrl exposure_auto_priority=0')
         self.stopped = False
         (self.grabbed, self.frame) = self.stream.read()
         Thread(target=self.__get, args=()).start()
@@ -26,7 +24,6 @@ class VideoCapture:
 
 
     def stop(self):
-        os.system('v4l2-ctl --set-ctrl exposure_auto_priority=1')
         self.stopped = True
         if self.stream is not None:
             self.stream.release()
