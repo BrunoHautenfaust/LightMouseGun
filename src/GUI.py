@@ -27,7 +27,7 @@ class GUI:
                 ])
             ]
         ]
-        window = sg.Window(title).Layout(layout)
+        window = sg.Window(title, use_default_focus=False).Layout(layout)
         window.Finalize()
         return window
 
