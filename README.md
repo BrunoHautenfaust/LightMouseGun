@@ -28,7 +28,7 @@ But if that's too much for you, then how about this:
 
 ## IMPORTANT:
 In low lit conditions the light tracking is a bit laggy. Just a bit but enough to feel it. That's due to the exposure settings on the webcam. The solution is to turn off the exposure.
-- Linux users can use *v4l2-ctl*. The command is `v4l2-ctl --set-ctrl exposure_auto_priority=0'`. You can turn it on again later.
+- Linux users can use *v4l2-ctl*. The command is `v4l2-ctl --set-ctrl exposure_auto_priority=0`. You can turn it on again later.
 - Windows users can use software such as *MyCam*.
 
 ## Known issues:
