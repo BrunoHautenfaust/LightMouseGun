@@ -26,9 +26,14 @@ But if that's too much for you, then how about this:
 - Flashlight.
 - Rubber band.
 
+## IMPORTANT:
+In low lit conditions the light tracking is a bit laggy. Just a bit but enough to feel it. That's due to the exposure settings on the webcam. The solution is to turn off the exposure.
+- Linux users can use *v4l2-ctl*. The command is `v4l2-ctl --set-ctrl exposure_auto_priority=0'`. You can turn it on again later.
+- Windows users can use software such as *MyCam*.
+
 ## Known issues:
 - Does not work with full-screen applications. At least in linux. Don't know about Windows.
-- The program utulizes *v4l2-ctl* to turn off the webcam auto exposure. The library is not available for Windows.
+- Colors in the preview window are a bit messed up but that's a minor problem and does not impede the program usage.
 ---
 _DEVELOPER NOTE:_
 To setup the project in Linux run the following commands in terminal in the `src` folder:
